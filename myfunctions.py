@@ -5,9 +5,6 @@ from pyspark.sql.functions import col
 # Because this file is not a Databricks notebook, you
 # must create a Spark session. Databricks notebooks
 # create a Spark session for you by default.
-spark = SparkSession.builder \
-                    .appName('integrity-tests') \
-                    .getOrCreate()
 
 # Does the specified table exist in the specified database?
 def tableExists(tableName, dbName):
